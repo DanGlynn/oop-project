@@ -56,4 +56,4 @@ The remaining string (Callie Johnson*Gene & Debbie Smith*Jose Feliciano*Jennifer
 
 ------------------------------------------Result-------------------------------------------
 
-A mail merge complete with accurate salutations is now available in minutes for all 650 of our patrons. A process which used to require our marketing coordinator several hours to complete now only requires a few minutes and is completed with a much higher degree of accuracy.
+A mail merge complete with accurate salutations is now available in minutes for all 650 of our patrons. A process which used to require several hours to complete now only requires a few minutes and is completed with a much higher degree of accuracy.
