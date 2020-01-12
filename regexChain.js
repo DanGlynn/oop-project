@@ -9,7 +9,7 @@
 // The salutations object is then turned into a string and all characters besides the values required for the stringSalutations...
 // ...are filtered out using a series of regex replace() functions.
 
-// The remaining string is then delimited at the *'s within excel, data is transposed, and pasted into the original document.
+// The remaining string is then delimited at the *'s within excel, data is transposed, and pasted into the original document to facilitate a mail merge.
 
 
 function createSalu(contacts) {
