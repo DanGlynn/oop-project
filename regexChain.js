@@ -11,7 +11,6 @@
 
 // The remaining string is then delimited at the *'s within excel, data is transposed, and pasted into the original document.
 
-// A mail merge complete with accurate salutations is now available in minutes for all 650 of our patrons.
 
 function createSalu(contacts) {
 var salutations = [];
