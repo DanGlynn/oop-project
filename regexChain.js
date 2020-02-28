@@ -1,16 +1,5 @@
-//Explanation of OOP project
 
-
-// An Object (var contacts) containing severals arrays with incomplete values of our 650 families is created from a CRM excel workbook export.
-
-// The function createSalu uses a for loop to iterate through all arrays in the object, using a series of if else statements to push the correct...
-// ...salutation into the salutations object.
-
-// The salutations object is then turned into a string and all characters besides the values required for the stringSalutations...
-// ...are filtered out using a series of regex replace() functions.
-
-// The remaining string is then delimited at the *'s within excel, data is transposed, and pasted into the original document to facilitate a mail merge.
-
+// var contacts [];  containing severals arrays with incomplete values of 650 families is created from a CRM excel workbook export.
 
 function createSalu(contacts) {
 var salutations = [];
@@ -51,7 +40,8 @@ pOneLast: 'Kiptonlanger',
 pTwoFirst: 'Danielle',
 pTwoLast: 'McGilliKutty'}
 ];
-
+/* iterate through all arrays in the object, using a series of if else statements to push the correct
+ salutation into the salutations object.*/
 for (var i = 0; i < contacts.length; i++) {
   if ((contacts[i].pOneFirst) &&
 (contacts[i].pTwoFirst) &&
@@ -68,6 +58,9 @@ for (var i = 0; i < contacts.length; i++) {
       salutations.push({first: contacts[i]['first']}, " ", {last: contacts[i]['last']},"*");
       }
     }
+  /* The salutations object is then turned into a string and all characters besides the values required for the stringSalutations...
+are filtered out using a series of regex replace() functions.*/
+
     var stringSalutations = JSON.stringify(salutations);
 
 let fixRegex = /("pOneFirst":)+/g;
@@ -111,5 +104,7 @@ let replaceText10 = "";
 let result = filter9.replace(fixRegex10, replaceText10);
 return result;
   };
+// The remaining string is then delimited at the *'s within excel, data is transposed, and pasted into the original document to facilitate a mail merge.
+
 
 console.log(createSalu());
